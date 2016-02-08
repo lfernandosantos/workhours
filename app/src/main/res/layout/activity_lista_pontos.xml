@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.br.checkponto.ListaPontosActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/laytouButons">
+        <EditText
+            android:id="@+id/edtNovoPonto"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="time"
+            />
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_refresh_button_ponto"
+            />
+        <TextView
+            android:typeface="serif"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/btnRefresh"
+            android:text="Tarefa:"
+            android:textSize="18sp"
+            android:id="@+id/textViewTarefa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTarefa"
+            android:id="@+id/edt_tarefa_ponto"
+            android:inputType="textCapWords"/>
+        <Button
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:layout_below="@+id/edt_tarefa_ponto"
+            android:text="Check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnCheckPonto"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:typeface="serif"
+            android:backgroundTintMode="src_atop"
+            android:background="@color/error_color"/>
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:layout_below="@+id/btnCheckPonto"
+            android:id="@+id/lisViewPontos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollAlwaysVisible="false"
+            android:layout_above="@+id/layoutInfoHoras"/>
+
+    <RelativeLayout
+        android:overScrollMode="always"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/layoutInfoHoras"
+        android:background="@color/ciza_actionbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Dia"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:id="@+id/txtTotalHorasDia"
+            android:layout_alignParentStart="true"
+            android:typeface="serif"
+            android:textSize="16sp"
+            android:layout_above="@+id/editTextTotalDia"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/editTextTotalDia"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/txtTotalHorasDia"
+            android:typeface="sans"
+            android:enabled="false"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simular"
+            android:typeface="serif"
+            android:id="@+id/btn_simular_dia"
+            android:layout_toLeftOf="@+id/btnFecharDia"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Fechar"
+            android:id="@+id/btnFecharDia"
+            android:typeface="serif"
+            android:textSize="11sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" Saldo Dia"
+            android:id="@+id/textViewSaldoDia"
+            android:typeface="serif"
+            android:textSize="16sp"
+            android:layout_above="@+id/editTextTotalDia"
+            android:layout_toRightOf="@+id/txtTotalHorasDia"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/abc_primary_text_material_dark"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:enabled="false"
+            android:id="@+id/edt_saldo"
+            android:layout_below="@+id/textViewSaldoDia"
+            android:layout_toRightOf="@+id/editTextTotalDia"
+            android:layout_alignStart="@+id/textViewSaldoDia"
+            android:textSize="15sp"
+            android:elegantTextHeight="false"
+            android:layout_alignEnd="@+id/textViewSaldoDia" />
+
+    </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

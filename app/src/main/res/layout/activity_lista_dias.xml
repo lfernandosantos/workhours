@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context=".ListaDiasActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_periodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/error_color"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/layout_periodo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                android:id="@+id/txt_periodo"
+                android:text="PERÍODO"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="27sp"
+                android:gravity="center"
+                android:typeface="sans"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="6dp"
+           android:textAlignment="center"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Inicial"
+            android:typeface="sans"
+            android:id="@+id/txtView_dt_ini_periodo"
+            android:layout_below="@+id/layout_periodo2"
+            android:layout_alignStart="@+id/edt_data_inicial_periodo" />
+        <EditText
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edt_data_inicial_periodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_dt_ini_periodo"
+            android:editable="false"
+            android:focusable="false"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:typeface="sans"
+            android:id="@+id/txtView_dt_fim_periodo"
+            android:text="Data Final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txtView_dt_ini_periodo"
+             />
+        <EditText
+            android:textSize="18sp"
+            android:id="@+id/edt_data_fim_periodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView_dt_fim_periodo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:editable="false"
+            android:focusable="false"
+             />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@id/layout_periodo"
+        android:id="@+id/listViewDias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout" />
+
+
+    <Button
+        android:id="@+id/btnNovo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="6dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/fundo_button_adc_dias"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        />
+
+    <LinearLayout
+        android:background="@color/background_floating_material_dark"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Saldo Mês: "
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"/>
+        <EditText
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_saldo_mes"/>
+    </LinearLayout>
+
+</RelativeLayout>

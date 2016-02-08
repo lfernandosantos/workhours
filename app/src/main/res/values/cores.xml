@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="linha_par">#97cbe2</color>
+    <color name="linha_impar">#76bddd</color>
+    <color name="azul_escuro">#303F9F</color>
+    <color name="vermelho">#D32F2F</color>
+    <color name="amarelo">#FFEB3B</color>
+    <color name="vermelho_escuro">#D32F2F</color>
+    <color name="vermelho_acent">#FF5252</color>
+    <color name="ciza_actionbar">#424242</color>
+</resources>

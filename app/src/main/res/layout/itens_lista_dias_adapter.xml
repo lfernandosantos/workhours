@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_fundo_adapter1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/ic_background_lista_client">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/dia_item_lista_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+         />
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/dia_item_lista_adapter"
+        android:id="@+id/mes_item_lista_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/mes_item_lista_adapter"
+        android:id="@+id/ano_item_lista_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewP1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/ano_item_lista_adapter"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewP2"
+        android:layout_below="@+id/textViewP1"
+        android:layout_alignStart="@+id/textViewP1"
+        android:layout_above="@+id/textViewP3"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewP3"
+        android:layout_alignBottom="@+id/ano_item_lista_adapter"
+        android:layout_alignStart="@+id/textViewP2"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textViewP4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewP3"
+        />
+
+
+
+
+</RelativeLayout>
